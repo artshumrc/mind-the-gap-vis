@@ -1,0 +1,93 @@
+body {
+  font-family: Gotham Book;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#graph-vis {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-image: url("https://farm5.staticflickr.com/4777/26973005628_2850b99943_o.png");
+}
+/**
+  green #50e3c2
+  pink #fb9b97
+  red #ff4e48
+**/
+.node {
+  stroke: #ffffff;
+  stroke-width: 3;
+}
+.event {
+  fill: #ffffff;
+  stroke: #fb9b97
+}
+.interview {
+  fill: #ff4e48;
+}
+.concept {
+  fill: #50e3c2;
+}
+.person {
+  fill: #fb9b97;
+}
+.link {
+  stroke: #fbfbfb;
+}
+text.titleText {
+  font-family: 'Gotham Book', 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  fill: #fff;
+}
+.orpheusModal {
+    background: rgba(255, 255, 255, 0.98);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #222;
+    overflow-y: scroll;
+}
+
+.orpheusModal .closeModal {
+  position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 44px;
+    height: 44px;
+    border: 2px #999 solid;
+    background: #999;
+    border-radius: 100%;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    -o-transition: all 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+.orpheusModal .closeModal i:before {
+    font-size: 22px;
+}
+.mdi-close:before {
+    content: "\F156";
+}
+.mdi:before, .mdi-set {
+    display: inline-block;
+    font: normal normal normal 24px/1 "Material Design Icons";
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
